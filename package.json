@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@f5io/jsonpath": "^1.0.3",
-    "browserify": "~2.36.1"
+    "browserify": "~2.36.1",
+    "whatwg-fetch": "^2.0.2"
   }
 }
