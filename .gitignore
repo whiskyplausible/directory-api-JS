@@ -1,4 +1,4 @@
 .project
 .settings
-JavaScript/node_modules
-JavaScript/static/cyclos.api.directory.js
+node_modules
+static/cyclos.api.directory.js
