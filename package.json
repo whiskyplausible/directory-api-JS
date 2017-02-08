@@ -2,7 +2,7 @@
   "name": "org.bristolpound.cyclos.api.directory",
   "version": "0.0.1",
   "description": "Bristol Pound Cyclos directory parser.",
-  "main": "src/org/bristolpound/mobile/phoenix/main.js",
+  "main": "lib",
   "homepage": "Http://bristolpound.org",
   "license": "GPL-3.0+",
   "repository": {
@@ -15,7 +15,11 @@
   },
   "dependencies": {
     "@f5io/jsonpath": "^1.0.3",
-    "browserify": "~2.36.1",
+    "browserify": ">2.36.1",
     "whatwg-fetch": "^2.0.2"
+  , "JSPON-For-JavaScript": "https://github.com/BristolPound/JSPON-For-JavaScript.git#feature-npm"
   }
+  ,"devDependencies": {
+   "node-fetch": "^1.6.3"
+   }
 }
