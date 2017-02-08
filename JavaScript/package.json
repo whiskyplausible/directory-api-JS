@@ -1,0 +1,20 @@
+{
+  "name": "org.bristolpound.cyclos.api.directory",
+  "version": "0.0.1",
+  "description": "Bristol Pound Cyclos directory parser.",
+  "main": "src/org/bristolpound/mobile/phoenix/main.js",
+  "homepage": "Http://bristolpound.org",
+  "license": "GPL-3.0+",
+  "repository": {
+    "type": "git",
+    "url": "https://code.bristolpound.org/cyclos-scripts/directory-api.git"
+  },
+  "scripts": {
+    "build-js": "browserify browser/*.js > static/cyclos.api.directory.js",
+    "build": "npm run build-js"
+  },
+  "dependencies": {
+    "@f5io/jsonpath": "^1.0.3",
+    "browserify": "~2.36.1"
+  }
+}
