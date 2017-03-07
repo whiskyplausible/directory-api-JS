@@ -2,12 +2,10 @@
  * http://usejsdoc.org/
  */
 
-var Dir = require('../lib');
+//var Dir = require('org.bristolpound.cyclos.api.directory');
+var DirectoryAPI = require('..');
 
-
-//var fetch = require('node-fetch');
-
-var dir = new Dir({
+var directoryAPI = new DirectoryAPI({
 	  host: "bristol-stage.community-currency.org"
 	, network: "bristolpound"
 });
@@ -19,12 +17,13 @@ var dir = new Dir({
 
 function test(json)
 {
-	console.log(json);
-	console.log(json.directory['1466'].data);
+	console.log(json.directory['2068777009451340281'].data);
 }
 
-console.log(dir.url());
-dir.directory(test);
+console.log(directoryAPI.url());
+var json = directoryAPI.directory(test);
+console.log(json);
+
 //dir.directory(console.log);
 
 /*
