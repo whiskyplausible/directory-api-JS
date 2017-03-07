@@ -1,6 +1,6 @@
 {
   "name": "org.bristolpound.cyclos.api.directory",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bristol Pound Cyclos directory parser.",
   "main": "lib",
   "homepage": "Http://bristolpound.org",
@@ -14,7 +14,7 @@
     "build": "npm run build-js"
   },
   "dependencies": {
-    "@f5io/jsonpath": "^1.0.3",
+    "@f5io/jsonpath": "^1.0.4",
     "node-fetch": "^1.6.3",
     "whatwg-fetch": "^2.0.2",
     "JSPON-For-JavaScript": "git+https://github.com/BristolPound/JSPON-For-JavaScript.git#feature-npm"
