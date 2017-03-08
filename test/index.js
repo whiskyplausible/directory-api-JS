@@ -18,7 +18,7 @@ const directoryAPI = new DirectoryAPI({
 function test(json)
 {
 	console.log(json);
-	console.log(json.directory['2068777009451340281'].data);
+	console.log(json.directory['2068777009451340281'].fields.username);
 }
 
 console.log(directoryAPI.url());
