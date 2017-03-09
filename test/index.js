@@ -17,8 +17,16 @@ const directoryAPI = new DirectoryAPI({
 
 function test(json)
 {
-	console.log(json);
+//	console.log(json);
+	console.log(json.directory['2068777009451340281']);
+	console.log(json.directory['2068777009451340281'].fields);
 	console.log(json.directory['2068777009451340281'].fields.username);
+	console.log("username: "+json.directory['2068777009451340281'].fields.username);
+	console.log("username.value: "+json.directory['2068777009451340281'].fields.username.value);
+	console.log("addresses.value: "+json.directory['2068777009451340281'].fields.addresses.value);
+	console.log("address: "+json.directory['2068777009451340281'].address);
+	console.log("name: "+json.directory['2068777009451340281'].name);
+	console.log("category: "+json.directory['2068777009451340281'].category);
 }
 
 console.log(directoryAPI.url());
