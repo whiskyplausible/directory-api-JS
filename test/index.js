@@ -42,6 +42,11 @@ function test(json)
 	console.log("name: "+json.directory['2068777009451296761'].name);
 */
 //	console.log(json.fields.businesscategory.possibleValues.values.accountants);
+	console.log(json);
+	console.log(json.fields.businesscategory);
+	console.log(json.fields.businesscategory.possibleValues.categories);
+	console.log(json.fields.businesscategory.possibleValues.values);
+	return;
 	console.log(json.directory['2068777009451344121']);
 	console.log(json.directory['2068777009451344121'].address);
 	console.log(json.directory['2068777009451344121'].fields.addresses);
@@ -52,7 +57,8 @@ function test(json)
 }
 
 console.log(directoryAPI.url());
-var json = directoryAPI.directory(test);
+//var json = directoryAPI.directory(test);
+var json = directoryAPI.staticDirectory(test);
 console.log(json);
 
 //dir.directory(console.log);
