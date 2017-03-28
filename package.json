@@ -1,6 +1,6 @@
 {
   "name": "org.bristolpound.cyclos.api.directory",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "Bristol Pound Cyclos directory parser.",
   "main": "lib",
   "homepage": "Http://bristolpound.org",
