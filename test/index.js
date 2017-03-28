@@ -10,6 +10,11 @@ const directoryAPI = new DirectoryAPI({
 	, network: "bristolpound"
 });
 
+
+const jp = require('@f5io/jsonpath');
+
+//console.log( (jp("$.adf.adsf", {}) === undefined));
+
 //const jsonPathQueryStr = '$..author'; //'$..h[?(@.foo>13)]';
 //const result = dir.jp(jsonPathQueryStr,dir.store);
 
@@ -17,8 +22,32 @@ const directoryAPI = new DirectoryAPI({
 
 function test(json)
 {
-	console.log(json);
-	console.log(json.directory['2068777009451340281'].fields.username);
+//	console.log(jp('$.fields',json));
+//	console.log(jp('$.fields.businesscategory.possibleValues',json));
+//	console.log(jp('$.fields.businesscategory.possibleValues.values.accountants',json));
+//	console.log(jp('$.fields.businesscategory.possibleValues.values.chocolatier',json));
+//	console.log(jp('$.fields.businesscategory.possibleValues.categories.lookingafteryou',json));
+//	console.log(json);
+//	console.log(json.fields);
+//	console.log(json.fields.businesscategory.possibleValues.categories.shopping);
+//	console.log(json.fields.businesscategory.possibleValues.categories.shopping.children[0]);
+//	console.log(json.fields.businesscategory.possibleValues.values);
+//	console.log(json.fields.businesscategory.possibleValues.values.entertainment);
+/*	console.log(json.directory['2068777009451296761']);
+	console.log(json.directory['2068777009451296761'].fields);
+	console.log(json.directory['2068777009451296761'].fields.username);
+	console.log("username: "+json.directory['2068777009451296761'].fields.username);
+	console.log("username.value: "+json.directory['2068777009451296761'].fields.username.value);
+	console.log("address: "+json.directory['2068777009451296761'].address);
+	console.log("name: "+json.directory['2068777009451296761'].name);
+*/
+//	console.log(json.fields.businesscategory.possibleValues.values.accountants);
+	console.log(json.directory['2068777009451296761']);
+	console.log(json.directory['2068777009451296761'].address);
+	console.log(json.directory['2068777009451296761'].fields.addresses);
+	console.log(json.directory['2068777009451296761'].fields.businesscategory);
+	console.log(json.directory['2068777009451296761'].categories);
+
 }
 
 console.log(directoryAPI.url());
