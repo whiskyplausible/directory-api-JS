@@ -1,4 +1,4 @@
 /**
  * http://usejsdoc.org/
  */
-const lib = require('../lib');
+window.org_bristolpound_cyclos_api_directory = require('../lib'); 
