@@ -14,7 +14,7 @@
     "build": "npm run build-js"
   },
   "dependencies": {
-    "@f5io/jsonpath": "^1.0.4",
+    "@f5io/jsonpath": "1.0.4",
     "node-fetch": "^1.6.3",
     "whatwg-fetch": "^2.0.2",
     "JSPON-For-JavaScript": "git+https://github.com/BristolPound/JSPON-For-JavaScript.git#v0.1.4"
