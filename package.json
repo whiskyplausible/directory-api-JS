@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@f5io/jsonpath": "1.0.4",
-    "node-fetch": "^1.6.3",
+    "node-fetch": "^2.6.1",
     "whatwg-fetch": "^2.0.2",
     "JSPON-For-JavaScript": "git+https://github.com/BristolPound/JSPON-For-JavaScript.git#v0.1.4"
   }
